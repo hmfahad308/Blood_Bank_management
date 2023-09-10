@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Blood_Bank_management.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <%--Bootstrap css--%>
+    <link href="Bootstrap/CSS/bootstrap.min.css" rel="stylesheet" />
+    <%--Datatables css--%>
+    <link href="Datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%--fontawesome css--%>
+    <link href="Fontawesome/css/all.css" rel="stylesheet" />
+   
+    <%--Customstyle--%>
+    <link href="CSS/customstyle.css" rel="stylesheet" />
+    <%--homepagestyle--%>
+    <link href="CSS/hompagestyle.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/c20080aba6.js" crossorigin="anonymous"></script>
+    
+    <%--jquery js--%>
+    <script src="Bootstrap/Js/jquery-3.3.1.slim.min.js"></script>
+    <%--popper js--%>
+    <script src="Bootstrap/Js/popper.min.js"></script>
+    <%--bootstrap js--%>
+    <script src="Bootstrap/Js/bootstrap.min.js"></script>
+    <%--Datatables js--%>
+      <script src="datatables/js/jquery.dataTables.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div >
+            <nav class="navbar navbar-expand-lg navbar-light" >
+                <a class="navbar-brand" href="#">
+                    <img src="images/bb_logo(white).png" width="30" height="30"/>
+                    BLOOD BANK
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="btn btn-outline-dark" href="homepage.aspx">Home</a>
+                        </li>
+                        &nbsp
+                        
+                        
+                        <li class="nav-item active">
+                             
+                            <a class="btn btn-outline-dark" href="#feature">About Us</a>
+                        </li>
+                        
+                        &nbsp
+                        <li class="nav-item active">
+                            <a class="btn btn-outline-dark" href="#terms">Terms</a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="navbar-nav">
+                         <li class="nav-item active">
+                             <asp:LinkButton class="btn btn-outline-dark" ID="LinkButton8" runat="server" OnClick="LinkButton5_Click">Donor List
+                                
+                            </asp:LinkButton>
+                        </li>
+                        &nbsp
+                        <li class="nav-item active">
+                             <asp:LinkButton class="btn btn-outline-dark" ID="LinkButton4" runat="server" OnClick="LinkButton4_Click" Visible="false">Update Profile
+                                
+                            </asp:LinkButton>
+                        </li>
+                        &nbsp
+                        <li class="nav-item active">
+                            <asp:LinkButton class="btn btn-outline-dark" ID="LinkButton1" OnClick="LinkButton1_Click" runat="server">User Login</asp:LinkButton>
+                        </li>
+                        &nbsp
+                        <li class="nav-item active">
+                            <asp:LinkButton class="btn btn-outline-dark" ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Sign Up</asp:LinkButton>
+                        </li>
+                        &nbsp
+                        <li class="nav-item active">
+                            <asp:LinkButton class="btn btn-outline-dark" ID="LinkButton3" runat="server" OnClick="LinkButton3_Click" Visible="False">Logout</asp:LinkButton>
+                        </li>
+                        &nbsp
+
+                        <li class="nav-item active">
+                            <asp:LinkButton class="btn btn-outline-dark" ID="LinkButton7" runat="server" OnClick="LinkButton7_Click" Visible="False">Hello user</asp:LinkButton>
+
+                        </li>
+                    </ul>
+                </div>
+
+                
+            </nav>
+        </div>
+        <!-- Main Content Placeholder -->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- Main Content Placeholder -->
+        
+        <%--Footer--%>
+        
+        <footer>
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                           <asp:LinkButton class="footerlinks" ID="LinkButton6" runat="server" OnClick="LinkButton6_Click">Admin Login</asp:LinkButton>
+                            
+                            &nbsp
+                            <asp:LinkButton class="footerlinks" ID="LinkButton10" runat="server" OnClick="LinkButton10_Click" Visible="false">Member Management</asp:LinkButton>
+                           
+                         </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p style="color:whitesmoke">&copy All right Reversed. <a class="footerlinks" href="#" target="_blank">Fahad</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿
+.banner {
+    width: 100%;
+    
+    
+    background-position: center;
+    background-size:cover;
+}
+.content {
+    width: 80%;
+    position: absolute;
+    color: white;
+    top: 60%;
+    left: 22%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: 50px;
+}
+    .content h1 {
+        font-size: 70px;
+        font-family: 'Neuton';
+        font-style: italic;
+        letter-spacing: 8px;
+    }
+
+    .content p {
+        margin: 10px 0 40px;
+       
+        font-size: 30px;
+        font-family: 'Neuton';
+    }
+
+button {
+    width: 200px;
+    padding: 10px;
+    margin: 5px 5px;
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+    background-color: rgba(0,192,226,0.6);
+    border: 2px;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Neuton',serif;
+    font-style: italic;
+}
+
+    button:hover {
+        background: rgb(0, 192, 226);
+        transition: 0.5s;
+    }
+    button:hover {
+        background-color: #880808;
+    }
+
+.banner video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media(min-aspect-ratio: 16/9) {
+    .banner video {
+        width: 100%;
+        height: auto;
+        
+    }
+}
+
